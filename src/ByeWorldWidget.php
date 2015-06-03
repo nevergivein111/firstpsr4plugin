@@ -2,16 +2,16 @@
 
 namespace nexus;
 
-//use yii\base\Widget;
-//use yii\helpers\Html;
+use yii\base\Widget;
+use yii\helpers\Html;
 
-class ByeWorldWidget //extends Widget
+class ByeWorldWidget extends Widget
 {
 public $message;
 
-public function __construct()
+public function init()
 {
-//parent::init();
+parent::init();
 if ($this->message === null) {
 $this->message = 'Bye World';
 }
